@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="h">
+        <h1>CGPA Calculator</h1>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 45%;">Subject</th>
+                    <th style="width: 15%;">Grade</th>
+                    <th style="width: 15%;">Credit</th>
+                    <th style="width: 10%;">Score</th>
+                    <th style="width: 15%;">Pass / Fail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="Enter course the name"></td>
+                    <td>
+                        <select>
+                            <option value="10">O</option>
+                            <option value="9">A+</option>
+                            <option value="8">A</option>
+                            <option value="7">B+</option>
+                            <option value="6">B</option>
+                            <option value="5">C</option>
+                            <option value="4">D</option>
+                            <option value="3">E</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Type" class="crdt"></td>
+                    <td><p class="g"></p></td>
+                    <td><p class="pf"></p></td>
+                </tr>
+            </tbody>
+        </table>
+        
+            <button class="add" onclick="addd()">Add course</button>
+            <button class="cal" onclick="calculate()">Calulate</button>
+       <div class="res">
+            <p class="k"></p>
+            <p class="r"></p>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
